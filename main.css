@@ -1,51 +1,112 @@
-* {
+body {
+  font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    max-width: 1920px;
 }
 
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(170, 162, 179);
+  padding: 5px;
   
-  nav ul {
-    list-style: none;
-  }
-  
-  nav li {
-    display: inline;
-    margin-left: 10px;
-  }
+}
 
-  .container {
-    display: flex;
-    align-items: center;
-  }
+header ul li {
+  display: inline;
+  padding: 10px;
+  cursor: pointer;
+  list-style: none;
   
-  .imagem {
-    flex: 1;
-    margin-right: 20px; 
-  }
-  
-  .sobre2 {
-    flex: 2;
-  }
+}
 
-  section {
-    padding: 20px; 
-  }
+nav {
+  display: block;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+
+.container img {
+  width: 90%;
+}
+
+section img {
+  margin: 0 5%;
+  padding-top: 20px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold; 
+}
+
+.sobre2 h2 {
+  border-bottom: 2px solid cornflowerblue;
+  padding-bottom: 10px;
+  font-style: italic;
+  color: cornflowerblue;
+}
+
+h3 {
+  display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+p {
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.product {
   
-  img {
-    margin-left: 20px; /* Adiciona um espaçamento à esquerda da imagem */
-  }
+    color: cornflowerblue;
+    padding-bottom: 10px;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+
+article {
+  padding: 10px;
+  align-items: center;
   
-  p {
-    margin-left: 20px; /* Adiciona um espaçamento à esquerda do parágrafo */
-  }
-  
-  h2 {
-    margin-left: 20px; /* Adiciona um espaçamento à esquerda do título h2 */
-  }
+}
+
+article img {
+  width: 200px;
+    height: 200px;
+    text-align: left;
+}
+
+button {
+  background-color: cornflowerblue;
+  padding: 5px;
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer; 
+}
+
+
