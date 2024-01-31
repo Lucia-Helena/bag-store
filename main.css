@@ -8,14 +8,13 @@ body {
 
 
 header {
-  
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: rgb(170, 162, 179);
-  padding: 5px;
+  color: white;
+  background-color: rgb(139, 139, 197);
   
-}
+  }
 
 header ul li {
   display: inline;
@@ -25,6 +24,12 @@ header ul li {
   
 }
 
+header li a {
+  text-decoration: none;
+  color: white;
+}
+
+
 nav {
   display: block;
 }
@@ -32,6 +37,7 @@ nav {
 section {
   display: flex;
   align-items: center;
+  
 }
 
 
@@ -52,6 +58,7 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold; 
+ 
 }
 
 .sobre2 h2 {
@@ -108,5 +115,55 @@ button {
   border: none;
   cursor: pointer; 
 }
+
+@media screen and (max-width: 640px) {
+  header {
+    width: 100%;
+    max-width: 640px;
+    
+  }
+
+  header h1 {
+    font-size: 20px;
+    margin-left: 40px;
+  }
+
+  header ul {
+    margin-right: 40px;
+  }
+
+  .container {
+    margin: 0 5%;
+  }
+
+  section {
+    display: block;
+    justify-content: center;
+  }
+
+  section img {
+    width: 100%;
+    margin: 0 5%;
+    padding-top: 20px;
+  }
+
+  .product {
+    margin: 0 5%;
+  }
+
+  #produtos {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0 5%;
+
+  }
+
+  article {
+    margin: 0 5%;
+  }
+}
+
+
 
 
